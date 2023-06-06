@@ -1,2 +1,10 @@
+1920
+1600
+기본 뷰 + 사이드 바 (세로)
+1024
+기본 뷰 + 사이드 바(가로)
+768 
+모바일 view
+
 경희마음한의원
 http://www.khmaeum.com/lan/index.php?n_media=27758&n_query=%EB%8B%A4%EC%82%B0%ED%95%9C%EC%9D%98%EC%9B%90&n_rank=1&n_ad_group=grp-a001-01-000000029315459&n_ad=nad-a001-01-000000209153524&n_keyword_id=nkw-a001-01-000004809098571&n_keyword=%EB%8B%A4%EC%82%B0%ED%95%9C%EC%9D%98%EC%9B%90&n_campaign_type=1&n_ad_group_type=1&NaPm=ct%3Dlik02zko%7Cci%3D0ye0003dUlTypqjIpLp5%7Ctr%3Dsa%7Chk%3D868a521d104cd937871f809a8fc7e5e4717bda34
