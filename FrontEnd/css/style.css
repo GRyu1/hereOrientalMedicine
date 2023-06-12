@@ -50,26 +50,67 @@ img {
   width: 100%;
 }
 
-@media (max-width: 1023px) { 
+/* 데스크탑 */
+@media (min-width: 1024px) {
    .wrapper { background-color: #fff; }
 }
 
-@media (min-width: 1024px) {
+/* 모바일 */
+@media (max-width: 1023px) { 
    .wrapper { background-color: #fff; }
 }
 
 
 /* style */
 
-header { width: 1024px; justify-items: center; margin: 0; background-color: red; }
+/* 폰트 */
+
+@font-face {
+	font-family: 'NotoSansKR-Light';
+	src: url('/src/font/NotoSansKR/NotoSansKR-Light.otf') format('truetype');
+}
+
+@font-face {
+	font-family: 'NotoSansKR-Regular';
+	src: url('/src/font/NotoSansKR/NotoSansKR-Regular.otf') format('truetype');
+}
+
+@font-face {
+	font-family: 'NotoSansKR-Medium';
+	src: url('/src/font/NotoSansKR/NotoSansKR-Medium.otf') format('truetype');
+}
+
+@font-face {
+	font-family: 'NotoSansKR-Bold';
+	src: url('/src/font/NotoSansKR/NotoSansKR-Bold.otf') format('truetype');
+}
+@font-face {
+	font-family: 'NotoSans-Light';
+	src: url('/src/font/NotoSansEN/NotoSans-Light.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'NotoSans-Medium';
+	src: url('/src/font/NotoSansEN/NotoSans-Medium.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'NotoSans-Bold';
+	src: url('/src/font/NotoSansEN/NotoSans-Bold.ttf') format('truetype');
+}
+
+li { list-style: none; }
+
+/* 헤더 */
+header { width: 100%; position: fixed; justify-content: space-between; 
+   align-items: center; margin: 0; display: flex; border-bottom: 1px solid #DCDCDC; }
 
 /* 메뉴바 */
-.nav { position: fixed; top: 0; left: 0; right: 0; background: #fff; display: flex; align-items: center;
-   align-items: center; justify-content: space-between; border-bottom: 1px solid #DCDCDC;}
+.nav { height: 100px; background: #fff; align-items: center;}
 
 /* 로고 */
-.logo_img { }
+.logo_img { width: 300px;}
 
 /* 메뉴 */
-ul { width: 100%; top: 0; left: 0; display: flex; justify-content: flex-end; float: left;
-    gap: 50px; padding: 50px 100px; }
+ul { width: 100%; display: flex; justify-content: flex-end;
+    gap: 50px; font-family: "NotoSansKR-Regular"; font-size: 17px}
+
+   
