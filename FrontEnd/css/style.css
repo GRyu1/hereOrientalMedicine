@@ -26,7 +26,7 @@ footer, header, hgroup, menu, nav, section {
    display: block;
 }
 ol, ul {
-   list-style: none;
+list-style: none;
 }
 blockquote, q {
    quotes: none;
@@ -50,3 +50,26 @@ img {
   width: 100%;
 }
 
+@media (max-width: 1023px) { 
+   .wrapper { background-color: #fff; }
+}
+
+@media (min-width: 1024px) {
+   .wrapper { background-color: #fff; }
+}
+
+
+/* style */
+
+header { width: 1024px; justify-items: center; margin: 0; background-color: red; }
+
+/* 메뉴바 */
+.nav { position: fixed; top: 0; left: 0; right: 0; background: #fff; display: flex; align-items: center;
+   align-items: center; justify-content: space-between; border-bottom: 1px solid #DCDCDC;}
+
+/* 로고 */
+.logo_img { }
+
+/* 메뉴 */
+ul { width: 100%; top: 0; left: 0; display: flex; justify-content: flex-end; float: left;
+    gap: 50px; padding: 50px 100px; }
