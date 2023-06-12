@@ -15,7 +15,7 @@ time, mark, audio, video {
    margin: 0;
    padding: 0;
    border: 0;
-   font-size: 100%;
+   /* font-size: 100%; */
    font: inherit;
    vertical-align: baseline;
   box-sizing: border-box;
@@ -100,17 +100,18 @@ img {
 li { list-style: none; }
 
 /* 헤더 */
-header { width: 100%; position: fixed; justify-content: space-between; 
+header { width: 100%; position: fixed; justify-content: space-between; padding-left: 230px;
    align-items: center; margin: 0; display: flex; border-bottom: 1px solid #DCDCDC; }
 
 /* 메뉴바 */
-.nav { height: 100px; background: #fff; align-items: center;}
+.nav { height: 100px; background: #fff; align-items: center; padding-right: 256px; }
 
 /* 로고 */
 .logo_img { width: 300px;}
 
 /* 메뉴 */
-ul { width: 100%; display: flex; justify-content: flex-end;
-    gap: 50px; font-family: "NotoSansKR-Regular"; font-size: 17px}
+ul { width: 100%; display: flex; justify-content: flex-end; margin: 35px 0;
+    gap: 50px; font-family: "NotoSansKR-Regular"; font-size: 18px;}
 
-   
+/* 이미지 크기 조절 */
+.side_bar{ width: 100px; }
