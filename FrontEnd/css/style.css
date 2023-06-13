@@ -165,8 +165,8 @@ aside #side_04 img { width: 130px; height: 130px; margin-top: 1px;}
 .icon_font_container #icon_font3 { margin-left: 20px; }
 .icon_font_container #icon_font4 { margin-right: 7px; }
 
-.icon_font_container #icon_font5 { margin-left: -15px; }
-.icon_font_container #icon_font6 { margin-left: -15px; }
+.icon_font_container #icon_font5 { margin-left: -20px; }
+.icon_font_container #icon_font6 { margin-left: -5px; }
 .icon_font_container #icon_font7 { margin-left: 50px; }
 .icon_font_container #icon_font8 { margin-left: 10px; }
 
@@ -184,10 +184,11 @@ aside #side_04 img { width: 130px; height: 130px; margin-top: 1px;}
 
 .section_4 { width: 1392px; height: 800px;}
 .section_4 h2.title { font-family: NotoSansKR-Medium; font-size: 40px; text-align: center; margin-left: 35%; margin-top: 50px; letter-spacing: 1px; }
+.section_4 h3.sub_title2 { font-family: NotoSansKR-Medium; font-size: 30px; color: #6DA9E4; margin-left: 45%; margin-top: 80px; letter-spacing: 1px; }
+.section_4 h3.sub_title3 { font-family: NotoSansKR-Medium; font-size: 30px; color: #6DA9E4; margin-left: 45%; margin-top: 15%; letter-spacing: 1px; }
 .section_4 .line { width: 50%; border-bottom: 1px solid rgb(110, 110, 110); position: absolute; left: 25%; margin-top: 20px;}
-.section_4 h3.sub_title { font-family: NotoSansKR-Medium; font-size: 35px; width: 100%; top: 22%; letter-spacing: 1px;}
 .section_4 span { color: #6DA9E4 }
-.section_4 .desc { font-family: NotoSansKR-Medium; font-size: 20px; width: 100%; top: 50%; left: 143%; }
+.section_4 .desc { font-family: NotoSansKR-Light; font-size: 20px; width: 100%; margin-left: 630px; }
 
 /* 둘러보기 */
 .section_5 { width: 1392px; height: 800px;}
