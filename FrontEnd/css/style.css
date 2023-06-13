@@ -118,10 +118,7 @@ aside { width : 60px; height: 500px; bottom: 0; right: 0; padding-top: 150px; ma
 aside .side_bar li { margin-bottom: 15px; }
 
 /* 사이드바 이미지 크기 조절 */
-aside #side_01{ background: #95BDFF; border-radius: 50%; width: 60px; height: 60px; display: flex; justify-content: center; align-items: center; } 
-aside #side_02{ background: #95BDFF; border-radius: 50%; width: 60px; height: 60px; display: flex; justify-content: center; align-items: center; } 
-aside #side_03{ background: #95BDFF; border-radius: 50%; width: 60px; height: 60px; display: flex; justify-content: center; align-items: center; } 
-aside #side_04{ background: #95BDFF; border-radius: 50%; width: 60px; height: 60px; display: flex; justify-content: center; align-items: center; } 
+aside #side_01, #side_02, #side_03, #side_04 { background: #95BDFF; border-radius: 50%; width: 60px; height: 60px; display: flex; justify-content: center; align-items: center; } 
 
 aside #side_01 img { width: 35px; height: 35px; }
 aside #side_02 img { width: 40px; height: 40px; }
@@ -173,25 +170,14 @@ aside #side_04 img { width: 130px; height: 130px; margin-top: 1px;}
 .icon_font_container #icon_font7 { margin-left: 50px; }
 .icon_font_container #icon_font8 { margin-left: 10px; }
 
-.icon_img #icon_01{ background: #91D8E4; border-radius: 50%; width: 80px; height:80px; display: flex; justify-content: center; align-items: center; } 
-.icon_img #icon_02{ background: #91D8E4; border-radius: 50%; width: 80px; height: 80px; display: flex; justify-content: center; align-items: center; } 
-.icon_img #icon_03{ background: #91D8E4; border-radius: 50%; width: 80px; height: 80px; display: flex; justify-content: center; align-items: center; } 
-.icon_img #icon_04{ background: #91D8E4; border-radius: 50%; width: 80px; height: 80px; display: flex; justify-content: center; align-items: center; } 
+.icon_img #icon_01, #icon_02, #icon_03, #icon_04 { background: #91D8E4; border-radius: 50%; width: 80px; height:80px; display: flex; justify-content: center; align-items: center; } 
 
-.icon_img2 #icon_05{ background: #91D8E4; border-radius: 50%; width: 80px; height: 80px; display: flex; justify-content: center; align-items: center; } 
-.icon_img2 #icon_06{ background: #91D8E4; border-radius: 50%; width: 80px; height: 80px; display: flex; justify-content: center; align-items: center; } 
-.icon_img2 #icon_07{ background: #91D8E4; border-radius: 50%; width: 80px; height: 80px; display: flex; justify-content: center; align-items: center; } 
-.icon_img2 #icon_08{ background: #91D8E4; border-radius: 50%; width: 80px; height: 80px; display: flex; justify-content: center; align-items: center; } 
+.icon_img2 #icon_05, #icon_06, #icon_07, #icon_08 { background: #91D8E4; border-radius: 50%; width: 80px; height: 80px; display: flex; justify-content: center; align-items: center; } 
 
-.icon_img #icon_01 img { width: 51px; height: 51px; }
-.icon_img #icon_02 img { width: 51px; height: 51px; }
+.icon_img #icon_01 img, #icon_02 img, #icon_04 img { width: 51px; height: 51px; }
 .icon_img #icon_03 img { width: 51px; height: 51px; margin-top: 10px;}
-.icon_img #icon_04 img { width: 51px; height: 51px; }
 
-.icon_img2 #icon_05 img { width: 51px; height: 51px; }
-.icon_img2 #icon_06 img { width: 51px; height: 51px; }
-.icon_img2 #icon_07 img { width: 51px; height: 51px; }
-.icon_img2 #icon_08 img { width: 51px; height: 51px; }
+.icon_img2 #icon_05 img, #icon_06 img, #icon_07 img, #icon_08 img { width: 51px; height: 51px; }
 
 /* 진료안내 */
 .button_box { width: 60px; height: 60px; }
