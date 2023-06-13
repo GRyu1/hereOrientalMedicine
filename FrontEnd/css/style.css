@@ -193,14 +193,13 @@ aside #side_04 img { width: 130px; height: 130px; margin-top: 1px;}
 .icon_img2 #icon_07 img { width: 51px; height: 51px; }
 .icon_img2 #icon_08 img { width: 51px; height: 51px; }
 
-
 /* 진료안내 */
 .button_box { width: 60px; height: 60px; }
 
 .section_4 { width: 1392px; height: 800px;}
 .section_4 h2.title { font-family: NotoSansKR-Medium; font-size: 40px; text-align: center; margin-left: 35%; margin-top: 50px; letter-spacing: 1px; }
 .section_4 .line { width: 50%; border-bottom: 1px solid rgb(110, 110, 110); position: absolute; left: 25%; margin-top: 20px;}
-.section_4 h3.sub_title { font-family: NotoSansKR-Medium; font-size: 35px; width: 100%; position: absolute; top: 22%; letter-spacing: 1px;}
+.section_4 h3.sub_title { font-family: NotoSansKR-Medium; font-size: 35px; width: 100%; top: 22%; letter-spacing: 1px;}
 .section_4 span { color: #95BDFF }
 .section_4 .desc { font-family: NotoSansKR-Medium; font-size: 20px; width: 100%; top: 50%; left: 143%; }
 
