@@ -1,17 +1,85 @@
 /* common */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
    margin: 0;
    padding: 0;
    border: 0;
@@ -22,21 +90,34 @@ time, mark, audio, video {
 }
 
 /* HTML5 display-role reset for older browsers */
-article,aside,details,figcaption,figure,footer,
-header,hgroup,menu,nav,section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
    display: block;
 }
 
-ol, ul {
+ol,
+ul {
    list-style: none;
 }
 
-blockquote,q {
+blockquote,
+q {
    quotes: none;
 }
 
-blockquote:before,blockquote:after,
-q:before, q:after {
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
    content: '';
    content: none;
 }
@@ -55,13 +136,6 @@ a {
 img {
    display: block;
    width: 100%;
-}
-
-/* 데스크탑 */
-@media (min-width: 1024px) {
-   .wrapper {
-      background-color: #fff;
-   }
 }
 
 /* 모바일 */
@@ -120,7 +194,7 @@ header {
    width: 100%;
    position: fixed;
    justify-content: space-between;
-   padding-left: 230px;
+   /* padding-left: 230px; */
    align-items: center;
    margin: 0;
    display: flex;
@@ -128,6 +202,7 @@ header {
    background-color: white;
    z-index: 999;
 }
+
 @media (max-width: 1080px) {
    header {
       width: 100vw;
@@ -154,6 +229,7 @@ header {
 .logo_img {
    width: 300px;
 }
+
 @media (max-width: 1080px) {
    .logo_img {
       width: 60vw;
@@ -165,11 +241,13 @@ header {
    height: 100px;
    background: #fff;
    align-items: center;
-   padding-right: 256px;
+   /* padding-right: 256px; */
 }
+
 .more-btn {
    display: none;
 }
+
 @media (max-width : 1080px) {
    .nav {
       display: none;
@@ -181,6 +259,7 @@ header {
       height: 100vh;
       background-color: aqua;
    }
+
    .more-btn {
       display: block;
       position: absolute;
@@ -192,6 +271,7 @@ header {
       border-radius: 9px;
       background-color: transparent;
    }
+
    .more-btn .hamburger {
       display: block;
       width: 24px;
@@ -203,8 +283,7 @@ header {
 }
 
 
-
-/* 메뉴 */
+/* 메뉴 폰트 */
 ul {
    width: 100%;
    display: flex;
