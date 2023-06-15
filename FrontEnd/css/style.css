@@ -191,11 +191,11 @@ li {
 
 /* 헤더 */
 header {
-   width: 100%;
+   width: 1920px;
    position: fixed;
-   justify-content: space-between;
+   /* justify-content: space-between; */
    /* padding-left: 230px; */
-   align-items: center;
+   /* align-items: center; */
    margin: 0;
    display: flex;
    border-bottom: 1px solid #DCDCDC;
@@ -228,6 +228,8 @@ header {
 /* 로고 */
 .logo_img {
    width: 300px;
+   margin-top: 15px;
+   margin-left: 200px;
 }
 
 @media (max-width: 1080px) {
@@ -240,8 +242,11 @@ header {
 .nav {
    height: 100px;
    background: #fff;
-   align-items: center;
-   /* padding-right: 256px; */
+   margin-left: 570px;
+}
+
+.header2 {
+   display: flex;
 }
 
 .more-btn {
@@ -284,11 +289,10 @@ header {
 
 
 /* 메뉴 폰트 */
-ul {
-   width: 100%;
+.nav ul {
    display: flex;
-   justify-content: flex-end;
-   margin: 35px 0;
+   align-items: center;
+   margin: 35px;
    gap: 50px;
    font-family: "NotoSansKR-Regular";
    font-size: 18px;
@@ -306,6 +310,7 @@ aside {
    display: flex;
    flex-direction: column;
    align-items: flex-end;
+   z-index: 999;
 }
 
 aside .side_bar li {
@@ -350,17 +355,17 @@ aside #side_04 img {
 /* 홈 */
 .background_img {
    padding-top: 55px;
+   width: 1920px;
+   height: 1080px;
 }
 
 .background_img h2.title {
    font-family: NotoSansKR-Regular;
    font-size: 65px;
-   text-align: center;
-   margin-bottom: 200px;
+   margin-left: 690px;
    letter-spacing: 3px;
-   width: 100%;
-   position: absolute;
-   top: 35%;
+   position: relative;
+   bottom: 680px;
    color: white;
 }
 
@@ -369,35 +374,27 @@ aside #side_04 img {
    font-size: 43px;
    text-align: center;
    margin-bottom: 200px;
-   width: 100%;
-   position: absolute;
-   top: 50%;
+   position: relative;
+   bottom: 650px;
    line-height: 1.3;
    color: white;
 }
 
-.background_img h4 {
-   width: 100%;
-   position: absolute;
-   top: 44%;
-}
-
 .section_1 .desc {
-   width: 100%;
    font-family: NotoSansKR-Light;
    font-size: 20px;
    text-align: center;
-   position: absolute;
-   top: 71%;
+   position: relative;
+   bottom: 770px;
    color: white;
 }
 
 .section_1 .line {
    width: 150px;
    border-bottom: 1px solid white;
-   position: absolute;
-   top: 68.5%;
-   left: 46%;
+   position: relative;
+   bottom: 790px;
+   left: 900px;
 }
 
 .background_img span {
@@ -407,7 +404,7 @@ aside #side_04 img {
 
 /* 소개 */
 .section_2 {
-   width: 1392px;
+   width: 1920px;
    height: 800px;
 }
 
@@ -415,21 +412,21 @@ aside #side_04 img {
    font-family: NotoSansKR-Medium;
    font-size: 40px;
    text-align: center;
-   margin-left: 35%;
+   margin-left: 80px;
    margin-top: 120px;
    letter-spacing: 1px;
 }
 
 .section_2 .line {
-   width: 50%;
+   width: 1000px;
    border-bottom: 1px solid rgb(110, 110, 110);
    position: absolute;
-   left: 25%;
+   left: 475px;
    margin-top: 20px;
 }
 
 .profile_img {
-   width: 21%;
+   width: 350px;
    position: absolute;
    left: 476px;
    margin-top: 90px;
@@ -455,11 +452,11 @@ aside #side_04 img {
 }
 
 .section_2 .line2 {
-   width: 24%;
+   width: 97px;
    border-bottom: 4px solid #6DA9E4;
    position: absolute;
-   top: 31%;
-   left: 143.5%;
+   top: 150px;
+   left: 502px;
 }
 
 .section_2 span {
@@ -478,7 +475,7 @@ aside #side_04 img {
 
 /* 진료과목 */
 .section_3 {
-   width: 1392px;
+   width: 1920px;
    height: 800px;
 }
 
@@ -486,26 +483,24 @@ aside #side_04 img {
    font-family: NotoSansKR-Medium;
    font-size: 40px;
    text-align: center;
-   margin-left: 35%;
+   margin-left: 80px;
    margin-top: 50px;
    letter-spacing: 1px;
 }
 
 .section_3 .line {
-   width: 50%;
+   width: 1000px;
    border-bottom: 1px solid rgb(110, 110, 110);
    position: absolute;
-   left: 25%;
+   left: 475px;
    margin-top: 20px;
 }
 
 .section_3 h3.sub_title {
    font-family: NotoSansKR-Regular;
-   font-size: 21px;
-   width: 100%;
-   position: absolute;
-   left: 26.5%;
+   font-size: 20px;
    margin-top: 40px;
+   margin-left: 550px;
    letter-spacing: 1px;
 }
 
@@ -514,130 +509,60 @@ aside #side_04 img {
    color: #6DA9E4
 }
 
-.section_3 .desc {
-   font-family: NotoSansKR-Medium;
-   font-size: 20px;
-   width: 100%;
-   position: absolute;
-   top: 50%;
-   left: 143%;
-}
 
 /* 진료과목 아이콘 */
-.icon_img {
-   margin-top: 170px;
-   margin-left: 340px;
+
+.icon_box ul{
    display: flex;
    justify-content: center;
-   gap: 170px
+   gap: 150px;
+   margin-top: 120px;
+   margin-right: 100px;
 }
 
 .icon_img2 {
-   margin-top: 100px;
-   margin-left: 510px;
-   display: flex;
-   justify-content: center;
-   gap: 170px
+   margin-left: 150px;
 }
 
-.icon_font_container {
-   width: 100%;
-   display: flex;
-   justify-content: center;
-   gap: 140px;
-   margin-top: 25px;
-   margin-left: 250px;
-   position: relative;
-}
-
-.icon_font {
+.icon_box span{
+   width: 200px;
    font-family: "NotoSansKR-Regular";
+   display: block;
    font-size: 20px;
+   text-align: center;
+   margin-top: 25px;
+   margin-left: -59px;
 }
 
 .icon_font2 {
    font-family: "NotoSansKR-Regular";
+   display: block;
    font-size: 20px;
+   text-align: center;
 }
 
-.icon_font_container #icon_font1 {
-   margin-left: 35px;
-}
-
-.icon_font_container #icon_font2 {
-   margin-left: 20px;
-}
-
-.icon_font_container #icon_font3 {
-   margin-left: 20px;
-}
-
-.icon_font_container #icon_font4 {
-   margin-right: 7px;
-}
-
-.icon_font_container #icon_font5 {
-   margin-left: -20px;
-}
-
-.icon_font_container #icon_font6 {
-   margin-left: -5px;
-}
-
-.icon_font_container #icon_font7 {
-   margin-left: 50px;
-}
-
-.icon_font_container #icon_font8 {
-   margin-left: 10px;
-}
-
-.icon_img #icon_01,
-#icon_02,
-#icon_03,
-#icon_04 {
+.icon_img #icon_01, #icon_02, #icon_03, #icon_04 {
    background: #7ac2c7;
    border-radius: 50%;
    width: 80px;
    height: 80px;
-   display: flex;
-   justify-content: center;
-   align-items: center;
 }
 
-.icon_img2 #icon_05,
-#icon_06,
-#icon_07,
-#icon_08 {
+.icon_img2 #icon_05, #icon_06,#icon_07, #icon_08 {
    background: #7ac2c7;
    border-radius: 50%;
    width: 80px;
    height: 80px;
-   display: flex;
-   justify-content: center;
-   align-items: center;
 }
 
-.icon_img #icon_01 img,
-#icon_02 img,
-#icon_04 img {
-   width: 51px;
-   height: 51px;
-}
-
-.icon_img #icon_03 img {
-   width: 51px;
-   height: 51px;
-   margin-top: 10px;
-}
-
-.icon_img2 #icon_05 img,
-#icon_06 img,
-#icon_07 img,
-#icon_08 img {
-   width: 51px;
-   height: 51px;
-}
+.icon_img_size1 { width: 60px; margin-left: 11px; margin-top: 6px; }
+.icon_img_size2 { width: 57px; margin-left: 11px; margin-top: 10px; }
+.icon_img_size3 { width: 57px; margin-left: 12px; margin-top: 15px; }
+.icon_img_size4 { width: 57px; margin-left: 12px; margin-top: 10px; }
+.icon_img_size5 { width: 57px; margin-left: 12px; margin-top: 10px; }
+.icon_img_size6 { width: 57px; margin-left: 12px; margin-top: 10px; }
+.icon_img_size7 { width: 57px; margin-left: 12px; margin-top: 11px; }
+.icon_img_size8 { width: 57px; margin-left: 12px; margin-top: 10px; }
 
 /* 진료안내 */
 .button_box {
@@ -646,7 +571,7 @@ aside #side_04 img {
 }
 
 .section_4 {
-   width: 1392px;
+   width: 1920px;
    height: 800px;
 }
 
@@ -654,8 +579,7 @@ aside #side_04 img {
    font-family: NotoSansKR-Medium;
    font-size: 40px;
    text-align: center;
-   margin-left: 35%;
-   margin-top: 50px;
+   margin-left: 80px;
    letter-spacing: 1px;
 }
 
@@ -663,7 +587,7 @@ aside #side_04 img {
    font-family: NotoSansKR-Medium;
    font-size: 30px;
    color: #6DA9E4;
-   margin-left: 45%;
+   margin-left: 630px;
    margin-top: 80px;
    letter-spacing: 1px;
 }
@@ -672,33 +596,68 @@ aside #side_04 img {
    font-family: NotoSansKR-Medium;
    font-size: 30px;
    color: #6DA9E4;
-   margin-left: 45%;
-   margin-top: 15%;
+   margin-left: 630px;
+   margin-top: 100px;
    letter-spacing: 1px;
 }
 
 .section_4 .line {
-   width: 50%;
+   width: 1000px;
    border-bottom: 1px solid rgb(110, 110, 110);
    position: absolute;
-   left: 25%;
+   left: 475px;
    margin-top: 20px;
 }
 
 .section_4 span {
-   color: #6DA9E4
+   font-family: NotoSansKR-Regular;
+   letter-spacing: 1.5px
 }
 
 .section_4 .desc {
    font-family: NotoSansKR-Light;
-   font-size: 20px;
-   width: 100%;
+   font-size: 22px;
+   margin-top: 20px;
    margin-left: 630px;
+   line-height: 50px
+}
+
+.button_box li{
+   width: 500px;
+   gap: 300px;
+   margin-top: 35px;
+   margin-left: 370px;
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+}
+
+.call_btn {
+   background-color: #7ac2c7;
+}
+
+.naver_btn {
+   background-color: #03c75a;
+}
+
+.btn_size {
+   width: 500px;
+   margin-left: 25px;
+}
+
+.button_box .call_btn,
+.button_box .naver_btn {
+   width: 100px;
+   height: 100px;
+   border-radius: 50%;
+   display: flex;
+   align-items: center;
+   gap: 10px;
 }
 
 /* 둘러보기 */
 .section_5 {
-   width: 1392px;
+   width: 1920px;
    height: 800px;
 }
 
@@ -706,16 +665,16 @@ aside #side_04 img {
    font-family: NotoSansKR-Medium;
    font-size: 40px;
    text-align: center;
-   margin-left: 35%;
-   margin-top: 50px;
+   margin-left: 80px;
+   margin-top: 220px;
    letter-spacing: 1px;
 }
 
 .section_5 .line {
-   width: 50%;
+   width: 1000px;
    border-bottom: 1px solid rgb(110, 110, 110);
    position: absolute;
-   left: 25%;
+   left: 475px;
    margin-top: 20px;
 }
 
