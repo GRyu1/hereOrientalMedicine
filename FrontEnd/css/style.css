@@ -504,7 +504,7 @@ aside #side_04 img {
    letter-spacing: 1px;
 }
 
-.section_3 span {
+.section_3 .sub_title span {
    font-weight: 900;
    color: #6DA9E4
 }
@@ -597,7 +597,7 @@ aside #side_04 img {
    font-size: 30px;
    color: #6DA9E4;
    margin-left: 630px;
-   margin-top: 100px;
+   margin-top: 80px;
    letter-spacing: 1px;
 }
 
@@ -622,11 +622,13 @@ aside #side_04 img {
    line-height: 50px
 }
 
+/* 진료 예약 버튼  */
+
 .button_box li{
    width: 500px;
    gap: 300px;
    margin-top: 35px;
-   margin-left: 370px;
+   margin-left: 630px;
    display: flex;
    justify-content: flex-start;
    align-items: center;
@@ -641,8 +643,9 @@ aside #side_04 img {
 }
 
 .btn_size {
-   width: 500px;
-   margin-left: 25px;
+   width: 65px;
+   margin-top: 15px;
+   margin-left: 18px;
 }
 
 .button_box .call_btn,
@@ -650,10 +653,27 @@ aside #side_04 img {
    width: 100px;
    height: 100px;
    border-radius: 50%;
+}
+
+.btn_font1 {
+   font-size: 25px;
+   width: 150px;
    display: flex;
    align-items: center;
-   gap: 10px;
-}
+   justify-content: center;
+   margin-left: 108px;
+   margin-top: -50px
+ }
+
+ .btn_font2 {
+   font-size: 25px;
+   width: 150px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-left: 120px;
+   margin-top: -50px
+ }
 
 /* 둘러보기 */
 .section_5 {
@@ -739,4 +759,10 @@ aside #side_04 img {
    position: absolute;
    top: 50%;
    left: 143%;
+}
+
+/* 카피라이터 */
+.section_7 {
+   width: 1392px;
+   height: 300px;
 }
