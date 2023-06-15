@@ -140,11 +140,113 @@ img {
 
 /* 모바일 */
 @media (max-width: 1080px) {
-   .wrapper {
-      background-color: #ff0000;
+   header {
+      width: 100vw;
+      height: 6.7vh;
+      position: fixed;
+      top: 0;
+      margin: 0 auto;
+      padding: 0;
+      align-items: center;
+      justify-content: space-between;
+   }
+   body {
+      margin: 0;
+      padding: 0;
+      width: 100vw;
+   }.nav {
+      display: none;
+      position: fixed;
+      padding: 20px;
+      top: 0;
+      right: 0;
+      width: 48vw;
+      height: 100vh;
+      background-color: aqua;
+   }
+
+   .more-btn {
+      display: block;
+      position: absolute;
+      right: 12px;
+      top: 8px;
+      width: 44px;
+      height: 44px;
+      border: none;
+      border-radius: 9px;
+      background-color: transparent;
+   }
+
+   .more-btn .hamburger {
+      display: block;
+      width: 24px;
+      height: 24px;
+      margin: 0 auto;
+      background: url(../../src/img/icon/hamburger.svg) no-repeat center;
+      background-size: contain;
+   }
+   .logo_img {
+      width: 60vw;
+   }
+   .side_bar {
+      display: none; /*js 작성전*/
+      position: fixed;
+   }
+   .container{
+      margin-top: 6.7vh;
+   }
+   .background_img {
+      overflow: hidden;
+   }
+   .background_img > img {
+      position: relative;
+      width: auto;
+      height: 150vw;
+      left: -90vw;
+   }
+   .background_img>h2{
+      position: relative;
+      top: -100vw;
+      font-size: 3.2vh;
+      color: white;
+      text-align: center;
+      font-weight: 550;
+   }
+   .sub_title{
+      position: relative;
+      top: -89vw;
+      font-size: 2.3vh;
+      text-align: center;
+      color: white;
+      font-weight: 500;
+   }
+   .colored_sbtilte{
+      color:  rgb(138, 169, 255);
+      font-weight: 550;
+   }
+   .line{
+      position: relative;
+      top : -83vw;
+      opacity: 0.5;
+      border-bottom: 1px solid white;
+      width: 10vw;
+      left: 45vw;
+   }
+   .desc{
+      position: relative;
+      display: flex;
+      top : -81vw;
+      justify-self: center;  
+          
+   }
+   #bannerDesc{
+      width: 82%;
+      font-size : 3.0vw;
+      color: white;
+      margin: 0 auto;
+      font-weight: 550;
    }
 }
-
 
 /* style */
 
@@ -203,39 +305,11 @@ header {
    z-index: 999;
 }
 
-@media (max-width: 1080px) {
-   header {
-      width: 100vw;
-      position: fixed;
-      top: 0;
-      height: auto;
-      margin: 0 auto;
-      padding: 0;
-      align-items: center;
-      justify-content: space-between;
-   }
-}
-
-/*body*/
-@media (max-width : 1080px) {
-   body {
-      margin: 0;
-      padding: 0;
-      width: 100vw;
-   }
-}
-
 /* 로고 */
 .logo_img {
    width: 300px;
    margin-top: 15px;
    margin-left: 200px;
-}
-
-@media (max-width: 1080px) {
-   .logo_img {
-      width: 60vw;
-   }
 }
 
 /* 메뉴바 */
@@ -251,40 +325,6 @@ header {
 
 .more-btn {
    display: none;
-}
-
-@media (max-width : 1080px) {
-   .nav {
-      display: none;
-      position: fixed;
-      padding: 20px;
-      top: 0;
-      right: 0;
-      width: 48vw;
-      height: 100vh;
-      background-color: aqua;
-   }
-
-   .more-btn {
-      display: block;
-      position: absolute;
-      right: 12px;
-      top: 8px;
-      width: 44px;
-      height: 44px;
-      border: none;
-      border-radius: 9px;
-      background-color: transparent;
-   }
-
-   .more-btn .hamburger {
-      display: block;
-      width: 24px;
-      height: 24px;
-      margin: 0 auto;
-      background: url(../../src/img/icon/hamburger.svg) no-repeat center;
-      background-size: contain;
-   }
 }
 
 
