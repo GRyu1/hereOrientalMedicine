@@ -402,7 +402,9 @@ aside #side_04 img {
 .background_img h2.title {
    font-family: NotoSansKR-Regular;
    font-size: 65px;
-   margin-left: 690px;
+   text-align: center;
+   margin-left: auto;
+   margin-right: auto;
    letter-spacing: 3px;
    position: relative;
    bottom: 680px;
@@ -434,7 +436,7 @@ aside #side_04 img {
    border-bottom: 1px solid white;
    position: relative;
    bottom: 790px;
-   left: 900px;
+   left: 890px;
 }
 
 .background_img span {
@@ -452,8 +454,8 @@ aside #side_04 img {
    font-family: NotoSansKR-Medium;
    font-size: 40px;
    text-align: center;
-   margin-left: 80px;
-   margin-top: 120px;
+   margin-left: auto;
+   margin-right: auto;
    letter-spacing: 1px;
 }
 
@@ -461,7 +463,7 @@ aside #side_04 img {
    width: 1000px;
    border-bottom: 1px solid rgb(110, 110, 110);
    position: absolute;
-   left: 475px;
+   left: 465px;
    margin-top: 20px;
 }
 
@@ -523,8 +525,8 @@ aside #side_04 img {
    font-family: NotoSansKR-Medium;
    font-size: 40px;
    text-align: center;
-   margin-left: 80px;
-   margin-top: 50px;
+   margin-left: auto;
+   margin-right: auto;
    letter-spacing: 1px;
 }
 
@@ -532,7 +534,7 @@ aside #side_04 img {
    width: 1000px;
    border-bottom: 1px solid rgb(110, 110, 110);
    position: absolute;
-   left: 475px;
+   left: 465px;
    margin-top: 20px;
 }
 
@@ -619,7 +621,8 @@ aside #side_04 img {
    font-family: NotoSansKR-Medium;
    font-size: 40px;
    text-align: center;
-   margin-left: 80px;
+   margin-left: auto;
+   margin-right: auto;
    letter-spacing: 1px;
 }
 
@@ -645,7 +648,7 @@ aside #side_04 img {
    width: 1000px;
    border-bottom: 1px solid rgb(110, 110, 110);
    position: absolute;
-   left: 475px;
+   left: 465px;
    margin-top: 20px;
 }
 
@@ -725,8 +728,8 @@ aside #side_04 img {
    font-family: NotoSansKR-Medium;
    font-size: 40px;
    text-align: center;
-   margin-left: 80px;
-   margin-top: 220px;
+   margin-left: auto;
+   margin-right: auto;
    letter-spacing: 1px;
 }
 
@@ -734,7 +737,7 @@ aside #side_04 img {
    width: 1000px;
    border-bottom: 1px solid rgb(110, 110, 110);
    position: absolute;
-   left: 475px;
+   left: 465px;
    margin-top: 20px;
 }
 
@@ -760,7 +763,7 @@ aside #side_04 img {
 
 /* 오시는길 */
 .section_6 {
-   width: 1392px;
+   width: 1920px;
    height: 800px;
 }
 
@@ -768,8 +771,8 @@ aside #side_04 img {
    font-family: NotoSansKR-Medium;
    font-size: 40px;
    text-align: center;
-   margin-left: 35%;
-   margin-top: 50px;
+   margin-left: auto;
+   margin-right: auto;
    letter-spacing: 1px;
 }
 
@@ -777,7 +780,7 @@ aside #side_04 img {
    width: 50%;
    border-bottom: 1px solid rgb(110, 110, 110);
    position: absolute;
-   left: 25%;
+   left: 465px;
    margin-top: 20px;
 }
 
@@ -802,7 +805,31 @@ aside #side_04 img {
 }
 
 /* 카피라이터 */
-.section_7 {
-   width: 1392px;
-   height: 300px;
-}
+footer {
+   background-color: #ececec;
+   border-top: 1px solid #DCDCDC;
+   padding: 20px;
+   height: 200px;
+   display: flex;
+   flex-direction: column;
+ }
+
+ footer img {
+   width: 300px;
+   display: block;
+   margin: 0 auto;
+   color: #4d4d4d;
+ }
+
+ footer .copyright_line{
+   width: 700px;
+   border-bottom: 1px solid #9c9c9c;
+   margin: 0 auto;
+ }
+
+ footer p {
+   text-align: center;
+   font-size: 14px;
+   color: #4d4d4d;
+   margin-top: 10px;
+ }
