@@ -137,9 +137,15 @@ img {
    display: block;
    width: 100%;
 }
-
+.mobile{
+   display: hidden;
+}
 /* 모바일 */
 @media (max-width: 1080px) {
+   .mobile{
+      display: flex;
+      justify-content: center;
+   }
    header {
       width: 100vw;
       height: 6.7vh;
@@ -176,7 +182,14 @@ img {
       border-radius: 9px;
       background-color: transparent;
    }
-
+   .toNextWrap{
+      display: flex;
+      justify-content: center;
+   }
+   .toNext{
+      position: fixed;
+      top: 90vh;
+   }
    .more-btn .hamburger {
       display: block;
       width: 24px;
@@ -286,6 +299,8 @@ img {
    font-family: 'NotoSans-Bold';
    src: url('/src/font/NotoSansEN/NotoSans-Bold.ttf') format('truetype');
 }
+
+
 
 li {
    list-style: none;
