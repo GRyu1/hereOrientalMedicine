@@ -138,7 +138,7 @@ img {
    width: 100%;
 }
 .mobile{
-   display: hidden;
+   display: none;
 }
 /* 모바일 */
 @media (max-width: 1080px) {
