@@ -514,13 +514,18 @@ aside #side_04 img {
 /* 소개 */
 .section_2 {
    width: 1920px;
-   height: 800px;
+   height: 1080px;
+}
+
+.section_2 .sub_title2{
+   font-size: 40px;
 }
 
 .section_2 h2.title {
    font-family: NotoSansKR-Medium;
    font-size: 40px;
    text-align: center;
+   margin-top: 100px;
    margin-left: auto;
    margin-right: auto;
    letter-spacing: 1px;
@@ -538,7 +543,7 @@ aside #side_04 img {
    width: 350px;
    position: absolute;
    left: 476px;
-   margin-top: 90px;
+   margin-top: 120px;
 }
 
 .section_2 h3.sub_title {
@@ -546,7 +551,7 @@ aside #side_04 img {
    font-size: 35px;
    width: 100%;
    position: absolute;
-   top: 22%;
+   top: -40px;
    left: 143%;
    letter-spacing: 1px;
 }
@@ -556,7 +561,7 @@ aside #side_04 img {
    font-size: 22px;
    width: 100%;
    position: absolute;
-   top: 35%;
+   top: 30px;
    left: 143.5%;
 }
 
@@ -564,8 +569,8 @@ aside #side_04 img {
    width: 97px;
    border-bottom: 4px solid #6DA9E4;
    position: absolute;
-   top: 150px;
-   left: 502px;
+   top: 10px;
+   left: 496px;
 }
 
 .section_2 span {
@@ -578,14 +583,14 @@ aside #side_04 img {
    font-size: 20px;
    width: 100%;
    position: absolute;
-   top: 50%;
+   top: 90px;
    left: 143%;
 }
 
 /* 진료과목 */
 .section_3 {
    width: 1920px;
-   height: 800px;
+   height: 1080px;
 }
 
 .section_3 h2.title {
@@ -681,7 +686,7 @@ aside #side_04 img {
 
 .section_4 {
    width: 1920px;
-   height: 800px;
+   height: 1080px;
 }
 
 .section_4 h2.title {
@@ -788,7 +793,7 @@ aside #side_04 img {
 /* 둘러보기 */
 .section_5 {
    width: 1920px;
-   height: 800px;
+   height: 1080px;
 }
 
 .section_5 h2.title {
