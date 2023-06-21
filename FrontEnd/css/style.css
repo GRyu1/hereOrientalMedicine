@@ -170,7 +170,9 @@ img {
       height: 100vh;
       background-color: aqua;
    }
-
+   aside{
+      display: none;
+   }
    .more-btn {
       display: block;
       position: absolute;
@@ -225,13 +227,41 @@ img {
       text-align: center;
       font-weight: 550;
    }
-   .sub_title{
+   .mobile_sub_title1{
       position: relative;
       top: -89vw;
       font-size: 2.3vh;
       text-align: center;
       color: white;
       font-weight: 500;
+   }
+   .mobile_sub_title2_1{
+      color: black;
+      margin-top: 3vh;
+      margin-left: 18vw;
+      font-size: 5vw;
+      font-weight: 550;
+   }
+   .mobile_sub_title2_2{
+      margin-top: 1vh;
+      margin-left: 18vw;
+      font-weight: 550;
+      margin-bottom: 2vh;
+   }
+   .StudyHistory, .conferences {
+      display: flex;
+      margin-left: 19vw;
+      margin-bottom: 5vw;
+      font-weight: 600;
+      font-size: 3vw;
+   }
+   .StudyHistoryDetails , .conferencesHistoryDetails{
+      margin-left: 3vw;
+   }
+   .line2{
+      margin-left: 17vw;
+      width: 15vw;
+      border-bottom: 2px solid rgb(138, 169, 255);;
    }
    .colored_sbtilte{
       color:  rgb(138, 169, 255);
@@ -242,15 +272,27 @@ img {
       top : -83vw;
       opacity: 0.5;
       border-bottom: 1px solid white;
-      width: 10vw;
+      width: 5vw;
       left: 45vw;
    }
-   .desc{
+   #doctor_img{
+      position: relative;
+      width: 50vw;
+      left: 25vw;
+   }
+   .line2Title{
+      position: relative;
+      opacity: 0.5;
+      border-bottom: 1.5px solid gray;
+      margin-bottom: 3vw;
+      width: 80vw;
+      left: 10vw;
+   }
+   .mobiledesc1{
       position: relative;
       display: flex;
       top : -81vw;
       justify-self: center;  
-          
    }
    #bannerDesc{
       width: 82%;
@@ -258,6 +300,17 @@ img {
       color: white;
       margin: 0 auto;
       font-weight: 550;
+   }
+   .title{
+      text-align: center;
+   }
+   .sectionTitle{
+      font-size: 5vw;
+      margin-bottom: 2vh;
+      font-weight: 550;
+   }
+   .sub_title2{
+      color: black;
    }
 }
 
