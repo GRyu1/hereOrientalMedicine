@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.css">
     <title>한의원 홈페이지</title>
 </head>
 
@@ -68,196 +70,215 @@
     </aside>
 
     <div class="container">
-        <div class="section section_1">
-            <div class="background_img">
-                <img src="/src/img/배경.png" alt="홈 배경">
-                <h2 class="title">여기가 경희한의원</h2>
-                <h3 class="sub_title mobile_sub_title1"><span class="span colored_sbtilte">손길</span> 하나하나에 <span
-                        class="span colored_sbtilte">마음</span>이 담긴 <span class="span colored_sbtilte">치료</span>, <br />
-                    <span class="span colored_sbtilte">여기가 경희한의원</span>에서 <span class="colored_sbtilte">경험</span>해 보세요.
-                </h3>
-                <div class="line"></div>
-                <div class="desc mobiledesc1">
-                    <p id="bannerDesc">[교통사고 클리닉 · 통증 클리닉 · 여성 클리닉 · 보약 클리닉 · 왕뜸 클리닉 ·  염증 클리닉]</p>
-                </div>
-            </div>
-        </div>
-        <div class="section section_2">
-            <h2 class="title sectionTitle">의료진 소개</h2>
-            <div class="line line2Title"></div>
-            <div class="profile_img">
-                <img id="doctor_img" src="/src/img/호두.jpg" alt="의사사진">
-                <h3 class="sub_title mobile_sub_title2_1">정&nbsp;&nbsp;면 <span class="sub_title2">대표원장</span></h3>
-                <div class="line2"></div>
-                <div class="desc">
-                    <ul class="StudyHistory">
-                        <li class="listTitle">· 학력</li>
-                        <ul class="StudyHistoryDetails">
-                            <li>-경희대학교 한의대 학사, 석사, 박사</li>
-                            <li>-경희대학교 외래교수 역임</li></br>
-                        </ul>
-                    </ul>
-                    <ul class="conferences">
-                        <li class="listTitle">· 학회</li>
-                        <ul class="conferencesHistoryDetails">
-                            <li>-대한한의학회</li>
-                            <li>-대한약침학회</li>
-                            <li>-한방비만학회</li>
-                            <li>-한방해독학회</li>
-                            <li>-척추추나학회</li>
-                            <li>-대한침도학회</li>
-                            <li>-통증매선학회</li>
-                            <li>-한방부인과학회</li>
-                            <li>-한방신경과학회</li>
-                            <li>-EFT 최면 심리치료 연수</li>
-                            <li>-카톡릭의대 인체해부연수</li>
-                            <li>-연세대의대 뇌과학해부연수</li>
-                        </ul>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="section section_3">
-            <h2 class="title sectionTitle">진료과목</h2>
-            <div class="line line2Title"></div>
-            <h3 class="sub_title"><span>여기가 경희한의원</span>은 환자의 건강을 최우선으로 생각하며, <span>세심하고 정성스런 진료</span>를 약속드립니다.</h3>
-            <div class="icon_box">
-                <div class="icon_img">
-                    <ul>
-                        <li id="icon_01">
-                            <div class="icon_img_size1"><img src="/src/img/진료과목/사상체질과.png" alt="사상체질과"></div>
-                            <span class="icon_font" id="icon_font1">교통사고 클리닉</span>
-                            <ul>
-                                <li>침/뜸/부항</li>
-                                <li>봉침/약침</li>
-                                <li>체질침</li>
-                                <li>추나 교정</li>
-                                <li>맟춤 한약</li>
-                            </ul>
-                        </li>
-                        <li id="icon_02">
-                            <div class="icon_img_size2"><img src="/src/img/진료과목/한방소아과.png" alt="한방소아과"></div>
-                            <span class="icon_font" id="icon_font2">통증 클리닉</span>
-                            <ul>
-                                <li>두통/불면</li>
-                                <li>오십견</li>
-                                <li>관절통증</li>
-                                <li>디스크/협착증</li>
-                            </ul>
-                        </li>
-                        <li id="icon_03">
-                            <div class="icon_img_size3"><img src="/src/img/진료과목/한방부인과.png" alt="한방부인과"></div>
-                            <span class="icon_font" id="icon_font3">여성 클리닉</span>
-                            <ul>
-                                <li>갱년기장애</li>
-                                <li>질염/방광염</li>
-                                <li>생리통/무월경</li>
-                                <li>불임/산후통증</li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-                <div class="icon_img2">
-                    <ul>
-                        <li id="icon_04">
-                            <div class="icon_img_size5"><img src="/src/img/진료과목/한방안이비인후피부과.png" alt="한방안이비인후피부과"></div>
-                            <span class="icon_font2" id="icon_font5">보약 클리닉</span>
-                            <ul>
-                                <li>만성피로</li>
-                                <li>감기/코로나 예방</li>
-                                <li>어린이 성장</li>
-                                <li>수험생 체력 증진</li>
-                                <li>산후 기력 회복</li>
-                            </ul>
-                        </li>
-                        <li id="icon_05">
-                            <div class="icon_img_size6"><img src="/src/img/진료과목/침구과.png" alt="침구과"></div>
-                            <span class="icon_font2" id="icon_font6">왕뜸 클리닉</span>
-                            <ul>
-                                <li>혈액순환</li>
-                                <li>수족냉증</li>
-                                <li>비만관리</li>
-                                <li>소화장애</li>
-                                <li>면역증진</li>
-                            </ul>
-                        </li>
-                        <li id="icon_06">
-                            <div class="icon_img_size7"><img src="/src/img/진료과목/한방내과.png" alt="한방내과"></div>
-                            <span class="icon_font2" id="icon_font7">염증 클리닉</span>
-                            <ul>
-                                <li>위염/식도염</li>
-                                <li>비염/축농증</li>
-                                <li>아토피/여드름</li>
-                                <li>수족관절염증</li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="section section_4">
-            <h2 class="title">진료안내</h2>
-            <div class="line"></div>
-            <h3 class="sub_title2">진료 시간</h3>
-            <div class="desc">
-                <p id="">평일 : 9:00 ~ 19:00 </p>
-                <p id="">토요일 : 9:00 ~ 19:00 </p>
-                <p id="">공휴일 : 9:00 ~ 14:00 </p>
-                <p id="">점심시간 : 13:00 ~ 14:00</p>
-                <p id="">예약 시, 점심시간 진료 가능합니다.</p>
-                <p id="">일요일은 휴진입니다.</p>
-            </div>
-            <h3 class="sub_title3">진료 예약</h3>
-            <div class="button_box">
-                <ul>
-                    <li>
-                        <div class="call_btn">
-                            <div class="btn_size"><img src="/src/img/사이드바_아이콘/telephone.png" alt="전화문의"></div>
-                            <span class="btn_font1">전화 문의</span>
+        <div id="fullpage">
+            <div class="section">
+                <div class="section section_1">
+                    <div class="swiper-container" id="my-swiper">
+                        <div class="swiper-wrapper" style = "height:1000px">
+                            <div class="swiper-slide"><img src="/src/img/대문사진/배경.png" alt="홈 배경"></div>
+                            <div class="swiper-slide"><img src="/src/img/대문사진/뜸.png" alt="홈 배경3"></div>
+                            <div class="swiper-slide"><img src="/src/img/대문사진/침.png" alt="홈 배경4"></div> 
+                            <div class="swiper-slide"><img src="/src/img/대문사진/교통사고.png" alt="홈 배경2"></div>
                         </div>
-                    </li>
+                            <div class="swiper-pagination"></div>
+                    </div>
+                    <h2 class="title">여기가 경희한의원</h2>
+                    <h3 class="sub_title mobile_sub_title1"><span class="span colored_sbtilte">손길</span> 하나하나에 <span
+                                class="span colored_sbtilte">마음</span>이 담긴 <span class="span colored_sbtilte">치료</span>, <br />
+                            <span class="span colored_sbtilte">여기가 경희한의원</span>에서 <span class="colored_sbtilte">경험</span>해 보세요.
+                    </h3>
+                    <div class="line"></div>
+                    <div class="desc mobiledesc1">
+                            <p id="bannerDesc">[교통사고 클리닉 · 통증 클리닉 · 여성 클리닉 · 보약 클리닉 · 왕뜸 클리닉 ·  염증 클리닉]</p>
+                    </div>
+                </div>
+            </div>
+            <div class="section" style="background-color:green; width:1903px; height:1000px">
+                <div class="section section_2">
+                    <h2 class="title sectionTitle">의료진 소개</h2>
+                    <div class="line line2Title"></div>
+                    <div class="profile_img">
+                        <img id="doctor_img" src="/src/img/호두.jpg" alt="의사사진">
+                        <h3 class="sub_title mobile_sub_title2_1">정&nbsp;&nbsp;면 <span class="sub_title2">대표원장</span></h3>
+                        <div class="line2"></div>
+                        <div class="desc">
+                            <ul class="StudyHistory">
+                                <li class="listTitle">· 학력</li>
+                                <ul class="StudyHistoryDetails">
+                                    <li>-경희대학교 한의대 학사, 석사, 박사</li>
+                                    <li>-경희대학교 외래교수 역임</li></br>
+                                </ul>
+                            </ul>
+                            <ul class="conferences">
+                                <li class="listTitle">· 학회</li>
+                                <ul class="conferencesHistoryDetails">
+                                    <li>-대한한의학회</li>
+                                    <li>-대한약침학회</li>
+                                    <li>-한방비만학회</li>
+                                    <li>-한방해독학회</li>
+                                    <li>-척추추나학회</li>
+                                    <li>-대한침도학회</li>
+                                    <li>-통증매선학회</li>
+                                    <li>-한방부인과학회</li>
+                                    <li>-한방신경과학회</li>
+                                    <li>-EFT 최면 심리치료 연수</li>
+                                    <li>-카톡릭의대 인체해부연수</li>
+                                    <li>-연세대의대 뇌과학해부연수</li>
+                                </ul>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section" style="background-color: yellow; width:1903px; height:1000px">
+                <div class="section section_3">
+                    <h2 class="title sectionTitle">진료과목</h2>
+                    <div class="line line2Title"></div>
+                    <h3 class="sub_title"><span>여기가 경희한의원</span>은 환자의 건강을 최우선으로 생각하며, <span>세심하고 정성스런 진료</span>를 약속드립니다.</h3>
+                    <div class="icon_box">
+                        <div class="icon_img">
+                            <ul>
+                                <li id="icon_01">
+                                    <div class="icon_img_size1"><img src="/src/img/진료과목/사상체질과.png" alt="사상체질과"></div>
+                                    <span class="icon_font" id="icon_font1">교통사고 클리닉</span>
+                                    <ul>
+                                        <li>침/뜸/부항</li>
+                                        <li>봉침/약침</li>
+                                        <li>체질침</li>
+                                        <li>추나 교정</li>
+                                        <li>맟춤 한약</li>
+                                    </ul>
+                                </li>
+                                <li id="icon_02">
+                                    <div class="icon_img_size2"><img src="/src/img/진료과목/한방소아과.png" alt="한방소아과"></div>
+                                    <span class="icon_font" id="icon_font2">통증 클리닉</span>
+                                    <ul>
+                                        <li>두통/불면</li>
+                                        <li>오십견</li>
+                                        <li>관절통증</li>
+                                        <li>디스크/협착증</li>
+                                    </ul>
+                                </li>
+                                <li id="icon_03">
+                                    <div class="icon_img_size3"><img src="/src/img/진료과목/한방부인과.png" alt="한방부인과"></div>
+                                    <span class="icon_font" id="icon_font3">여성 클리닉</span>
+                                    <ul>
+                                        <li>갱년기장애</li>
+                                        <li>질염/방광염</li>
+                                        <li>생리통/무월경</li>
+                                        <li>불임/산후통증</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    <div class="icon_img2">
+                        <ul>
+                            <li id="icon_04">
+                                <div class="icon_img_size5"><img src="/src/img/진료과목/한방안이비인후피부과.png" alt="한방안이비인후피부과"></div>
+                                <span class="icon_font2" id="icon_font5">보약 클리닉</span>
+                                <ul>
+                                    <li>만성피로</li>
+                                    <li>감기/코로나 예방</li>
+                                    <li>어린이 성장</li>
+                                    <li>수험생 체력 증진</li>
+                                    <li>산후 기력 회복</li>
+                                </ul>
+                            </li>
+                            <li id="icon_05">
+                                <div class="icon_img_size6"><img src="/src/img/진료과목/침구과.png" alt="침구과"></div>
+                                <span class="icon_font2" id="icon_font6">왕뜸 클리닉</span>
+                                <ul>
+                                    <li>혈액순환</li>
+                                    <li>수족냉증</li>
+                                    <li>비만관리</li>
+                                    <li>소화장애</li>
+                                    <li>면역증진</li>
+                                </ul>
+                            </li>
+                            <li id="icon_06">
+                                <div class="icon_img_size7"><img src="/src/img/진료과목/한방내과.png" alt="한방내과"></div>
+                                <span class="icon_font2" id="icon_font7">염증 클리닉</span>
+                                <ul>
+                                    <li>위염/식도염</li>
+                                    <li>비염/축농증</li>
+                                    <li>아토피/여드름</li>
+                                    <li>수족관절염증</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section" style="background-color: orange; width:1903px; height:1000px">
+                <div class="section section_4">
+                    <h2 class="title">진료안내</h2>
+                    <div class="line"></div>
+                    <h3 class="sub_title2">진료 시간</h3>
+                    <div class="desc">
+                        <p id="">평일 : 9:00 ~ 19:00 </p>
+                        <p id="">토요일 : 9:00 ~ 19:00 </p>
+                        <p id="">공휴일 : 9:00 ~ 14:00 </p>
+                        <p id="">점심시간 : 13:00 ~ 14:00</p>
+                        <p id="">예약 시, 점심시간 진료 가능합니다.</p>
+                        <p id="">일요일은 휴진입니다.</p>
+                    </div>
+                    <h3 class="sub_title3">진료 예약</h3>
+                    <div class="button_box">
+                        <ul>
+                            <li>
+                                <div class="call_btn">
+                                    <div class="btn_size"><img src="/src/img/사이드바_아이콘/telephone.png" alt="전화문의"></div>
+                                    <span class="btn_font1">전화 문의</span>
+                                </div>
+                            </li>
 
-                    <li>
-                        <div class="naver_btn">
-                            <div class="btn_size"><img src="/src/img/사이드바_아이콘/네이버예약_로고.png" alt="네이버예약"></div>
-                            <span class="btn_font2">네이버 예약</span>
-                        </div>
-                    </li>
-                </ul>
+                            <li>
+                                <div class="naver_btn">
+                                    <div class="btn_size"><img src="/src/img/사이드바_아이콘/네이버예약_로고.png" alt="네이버예약"></div>
+                                    <span class="btn_font2">네이버 예약</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="section section_5">
-            <h2 class="title">둘러보기</h2>
-            <div class="line"></div>
-            <h3 class="sub_title">환자들이 진료 과정에서 안심하고 편안하게 느낄 수 있도록 최상의 환경을 만들기 위해 노력하고 있습니다. </h3>
-            <div class="interior">
-                <li>
-                    <img src="#">
-                </li>
-                <li>
-                    <img src="#">
-                </li>
-                <li>
-                    <img src="#">
-                </li>
-                <li>
-                    <img src="#">
-                </li>
-                <li>
-                    <img src="#">
-                </li>
+            <div class="section" style="background-color: gray; width:1903px; height:1000px">
+                <div class="section section_5">
+                    <h2 class="title">둘러보기</h2>
+                    <div class="line"></div>
+                    <h3 class="sub_title">환자들이 진료 과정에서 안심하고 편안하게 느낄 수 있도록 최상의 환경을 만들기 위해 노력하고 있습니다. </h3>
+                    <div class="interior">
+                        <li>
+                            <img src="#">
+                        </li>
+                        <li>
+                            <img src="#">
+                        </li>
+                        <li>
+                            <img src="#">
+                        </li>
+                        <li>
+                            <img src="#">
+                        </li>
+                        <li>
+                            <img src="#">
+                        </li>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="section section_6">
-            <h2 class="title">오시는길</h2>
-            <div class="line"></div>
-            <h3 class="sub_title">주소 안내</h3>
-            <div class="desc1">· 경기도 남양주시 미금로 103, 203호(다산동)</div>
-            <h3 class="sub_title2">대표 전화</h3>
-            <div class="desc2">· 031-558-1075</ㅇ>
+            <div class="section" style="background-color: blue; width:1903px; height:1000px">
+                <div class="section section_6">
+                    <h2 class="title">오시는길</h2>
+                    <div class="line"></div>
+                    <h3 class="sub_title">주소 안내</h3>
+                    <div class="desc1">· 경기도 남양주시 미금로 103, 203호(다산동)</div>
+                    <h3 class="sub_title2">대표 전화</h3>
+                    <div class="desc2">· 031-558-1075</ㅇ>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
+        </div> 
     </div>
     <footer class="copyright">
         <div class="copyright_img">
@@ -266,7 +287,11 @@
         <div class="copyright_line"></div>
         <p>여기가경희한의원 | 대표자명: 전호두 | 경기도 남양주시 다산동 어쩌고 저쩌고 프라자 203호 | 대표전화 : 031-111-1111 | 사업자등록번호 : 123-12-123456</p>
     </footer>
+    <script src="../js/jquery-3.7.0.js"></script>
     <script src="../js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    
 </body>
 
 </html>
