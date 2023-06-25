@@ -55,44 +55,52 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-/*  메뉴 스크롤  */
+/* 메뉴 스크롤 */
 var $menu = $(".nav ul li"),
   $contents = $(".section"),
   $doc = $("html, body");
+var isScrolling = false; // 스크롤 이벤트 중인지를 나타내는 변수 추가
+
 $(function () {
   $menu.on("click", "a", function (e) {
-    var $target = $(this).parent(), // 클릭한 메뉴 항목의 부모 요소인 <li>를 $target 변수에 할당
-      idx = $target.index(), // $target의 인덱스를 가져와 $contents에서 해당 섹션을 선택할 때 사용할 인덱스인 idx 변수에 할당
-      section = $contents.eq(idx), // $contents에서 idx에 해당하는 섹션을 선택하고 section 변수에 할당
-      offsetTop = section.offset().top; // 선택한 섹션의 상단 위치를 offsetTop 변수에 할당
+    e.preventDefault(); // 기본 링크 이동 동작 방지
+    if (isScrolling) return; // 스크롤 이벤트 중인 경우 클릭 이벤트 무시
 
-    var correctedOffsetTop = offsetTop - -10; // offsetTop 값을 10만큼 보정값 조정, 스크롤 살짝 위로 올리기
-    $doc
-      .stop() // $doc 변수에 저장된 문서 요소('html, body')를 애니메이션으로 스크롤
-      .animate(
-        {
-          scrollTop: correctedOffsetTop,
-        },
-        500
-      ); // scrollTop 속성을 correctedOffsetTop 값으로 설정하고, 500밀리초 동안 애니메이션을 진행
-    return false; // <a> 요소를 클릭했을 때 기본적으로 발생하는 링크 이동을 방지
+    isScrolling = true; // 스크롤 이벤트 중으로 플래그 설정
+    var $target = $(this).parent(),
+      idx = $target.index(),
+      section = $contents.eq(idx),
+      offsetTop = section.offset().top;
+
+    var correctedOffsetTop = offsetTop - -30;
+    $doc.stop().animate(
+      {
+        scrollTop: correctedOffsetTop,
+      },
+      500,
+      function () {
+        isScrolling = false; // 스크롤 애니메이션이 완료된 후 플래그 해제
+      }
+    );
+    $menu.removeClass("on");
+    $menu.eq(idx).addClass("on");
   });
 });
 
+/* 메뉴 색 변경 */
 $(window).scroll(function () {
-  // 윈도우의 스크롤 이벤트가 발생할 때 실행될 이벤트 핸들러를 등록
-  var scltop = $(window).scrollTop(); // 현재 스크롤의 위치를 scltop 변수에 할당. scrollTop() 함수는 스크롤된 Y축의 위치를 반환
+  if (isScrolling) return; // 스크롤 이벤트 중인 경우 실행하지 않음
+
+  var scltop = $(window).scrollTop();
 
   $.each($contents, function (idx, item) {
-    // $contents에 대해 반복문을 실행. $contents는 각 섹션 요소들을 나타내는 배열
-    var $target = $contents.eq(idx), // 현재 반복 중인 섹션을 $target 변수에 할당
-      i = $target.index(), // $target의 인덱스를 가져와 i 변수에 할당
-      targetTop = $target.offset().top; // $target 요소의 상단 위치를 targetTop 변수에 할당
+    var $target = $contents.eq(idx),
+      i = $target.index(),
+      targetTop = $target.offset().top;
 
     if (targetTop <= scltop) {
-      // 현재 스크롤 위치(scltop)가 $target 요소의 상단 위치(targetTop)보다 크거나 같을 경우 실행
-      $menu.removeClass("on"); // 모든 메뉴 항목에서 'on' 클래스를 제거
-      $menu.eq(idx).addClass("on"); // 현재 섹션에 해당하는 메뉴 항목에 'on' 클래스를 추가. 이를 통해 현재 보여지는 섹션과 연관된 메뉴 항목에 시각적인 표시를 줄 수 있다
+      $menu.removeClass("on");
+      $menu.eq(idx).addClass("on");
     }
   });
 });
