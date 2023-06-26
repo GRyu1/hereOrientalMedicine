@@ -4,14 +4,13 @@ import com.hereOM.backend.domain.Member;
 import lombok.Data;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
-import org.springframework.security.oauth2.core.user.OAuth2User;
 
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Map;
 
 @Data
-public class PrincipalDetails implements UserDetails, OAuth2User {
+public class PrincipalDetails implements UserDetails {
 
     private Member user;
     private Map<String, Object> attributes;
@@ -24,11 +23,6 @@ public class PrincipalDetails implements UserDetails, OAuth2User {
     public PrincipalDetails(Member user, Map<String, Object> attributes) {
         this.user = user;
         this.attributes = attributes;
-    }
-
-    @Override
-    public Map<String, Object> getAttributes() {
-        return attributes;
     }
 
     @Override//해당 유저의 권한을 리턴하는 곳!
@@ -73,8 +67,4 @@ public class PrincipalDetails implements UserDetails, OAuth2User {
         return true;
     }
 
-    @Override
-    public String getName() {
-        return null;
-    }
 }
