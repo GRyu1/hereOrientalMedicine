@@ -1,4 +1,4 @@
-package com.hereOM.backend.Dto;
+package com.hereOM.backend.Dto.google;
 
 import lombok.Builder;
 import lombok.Data;
