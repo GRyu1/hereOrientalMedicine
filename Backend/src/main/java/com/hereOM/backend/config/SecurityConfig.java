@@ -3,6 +3,7 @@ package com.hereOM.backend.config;
 import com.hereOM.backend.jwt.JWtAuthenticationFilter;
 import com.hereOM.backend.jwt.JwtAuthorizationFilter;
 import com.hereOM.backend.repository.MemberRepository;
+import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -22,10 +23,11 @@ import static org.springframework.security.config.Customizer.withDefaults;
 
 @Configuration
 @EnableWebSecurity // 스프링시큐리티 필터가 스프링 필터체인에 등록이 됩니다.
+@RequiredArgsConstructor
 @EnableGlobalMethodSecurity(securedEnabled = true, prePostEnabled = true)//preAuthorize,PostAuthorize 어노테이션 활성화
 public class SecurityConfig{
-//    @Autowired
-//    public final MemberRepository memberRepository;
+    @Autowired
+    private final MemberRepository memberRepository;
     @Bean
     public BCryptPasswordEncoder PwEncoder() {
         return new BCryptPasswordEncoder();
@@ -42,6 +44,7 @@ public class SecurityConfig{
                 .and()
                 .authorizeHttpRequests((authorize) -> authorize
                 .requestMatchers("/admin/**").hasRole("ADMIN")
+                        .requestMatchers("/user").hasRole("USER")
                 .anyRequest().permitAll());
         return http.build();
     }
@@ -52,8 +55,7 @@ public class SecurityConfig{
 
             AuthenticationManager authenticationManager =
                     builder.getSharedObject(AuthenticationManager.class);
-            builder.addFilter(new JWtAuthenticationFilter(authenticationManager));
-//                    .addFilter(new JwtAuthorizationFilter(authenticationManager),memberRepository);
+            builder.addFilter(new JwtAuthorizationFilter(authenticationManager,memberRepository));
             super.configure(builder);
         }
     }

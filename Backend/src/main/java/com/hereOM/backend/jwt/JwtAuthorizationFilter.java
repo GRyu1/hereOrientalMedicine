@@ -29,17 +29,16 @@ public class JwtAuthorizationFilter extends BasicAuthenticationFilter {
     protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain chain) throws IOException, ServletException {
         System.out.println("JwtAuthorizationFilter Running");
 
-        String jwtHeader = request.getHeader("Authorazation");
+        String jwtHeader = request.getHeader("Authorization");
         System.out.println("jwtHeader@JwtAuthorizationFilter : "+jwtHeader);
-        if(jwtHeader == null || !jwtHeader.startsWith("Bearer ")){
+        if(jwtHeader == null){
             System.out.println("유효하지 않은 토큰, 검증 실패");
             chain.doFilter(request,response);
             return;
         }
-        String jwtToken = request.getHeader("Authorazation").replace("Bearer ","");
 
-        String username = JWT.require(Algorithm.HMAC512(JwtProperties.SECRET)).build().verify(jwtToken).getClaim("username").asString();
-        System.out.println("Debug Username : "+username);
+        String username = JWT.require(Algorithm.HMAC512(JwtProperties.SECRET)).build().verify(jwtHeader).getClaim("username").asString();
+        System.out.println("Debug username : "+username);
 
         if(username != null){
             Member memberEntity = memberRepository.findByUsername(username);
@@ -47,7 +46,6 @@ public class JwtAuthorizationFilter extends BasicAuthenticationFilter {
             Authentication authentication = new UsernamePasswordAuthenticationToken(principalDetails,null,principalDetails.getAuthorities());
 
             SecurityContextHolder.getContext().setAuthentication(authentication);
-
         }
         chain.doFilter(request,response);
     }
