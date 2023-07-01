@@ -18,7 +18,7 @@ public class PrincipalDetailsService implements UserDetailsService {
         System.out.println("loadUserByname : "+username);
         Member userEntity = memberRepository.findByUsername(username);
         if(userEntity != null){
-            System.out.println("로그인 성공 user : "+userEntity.toString());  
+            System.out.println("로그인 성공 user : "+userEntity.toString());
             return new PrincipalDetails(userEntity);
         }
         return null;
