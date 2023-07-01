@@ -416,8 +416,8 @@ aside {
   height: 500px;
   bottom: 0;
   right: 0;
-  padding-top: 150px;
-  margin-right: 50px;
+  padding-top: 125px;
+  margin-right: 100px;
   position: fixed;
   display: flex;
   flex-direction: column;
@@ -475,9 +475,9 @@ aside #side_04 img {
 .section.section_4,
 .section.section_5,
 .section.section_6 {
-  opacity: 0; /* 초기에 숨김 */
-  transform: translateY(-30px); /* 초기 위치를 위로 이동시킴 */
-  transition: opacity 0.5s ease-in, transform 0.5s ease-in; /* opacity와 transform에 애니메이션 효과 적용 */
+  opacity: 1; /* 초기에 숨김 */
+  /* transform: translateY(-30px); 초기 위치를 위로 이동시킴 */
+  /* transition: opacity 0.5s ease-in, transform 0.5s ease-in; opacity와 transform에 애니메이션 효과 적용 */
 }
 
 .section.section_2.fade-in,
@@ -1026,7 +1026,7 @@ aside #side_04 img {
 }
 
 .address_list {
-  margin-top: 500px;
+  margin-top: 30px;
   margin-left: 530px;
   gap: 250px;
   display: flex;
@@ -1095,4 +1095,9 @@ footer p {
   font-size: 14px;
   color: #4d4d4d;
   margin-top: 30px;
+}
+
+#mapContainer{
+  display: flex;
+  justify-content: center;
 }

@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/swiper.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.css">
-    <title>한의원 홈페이지</title>
+    <title>여기가 경희 한의원</title>
 </head>
 
 <body>
@@ -53,13 +53,13 @@
             <div class="sidebar_content">
               <ul>
                 <li id="side_01">
-                  <a href="#"><img src="/src/img/사이드바_아이콘/telephone.png" alt="사이드바_전화"></a>
+                  <a href="#call"><img src="/src/img/사이드바_아이콘/telephone.png" alt="사이드바_전화"></a>
                 </li>
                 <li id="side_02">
                   <a href="#"><img src="/src/img/사이드바_아이콘/네이버예약_로고.png" alt="사이드바_예약"></a>
                 </li>
                 <li id="side_03">
-                  <a href="#"><img src="/src/img/사이드바_아이콘/map2.png" alt="사이드바_지도"></a>
+                  <a href="#address"><img src="/src/img/사이드바_아이콘/map2.png" alt="사이드바_지도"></a>
                 </li>
                 <li id="side_04">
                   <div class="to_top_btn">
@@ -75,10 +75,10 @@
         <div class="section section_1" id="section_1">
             <div class="swiper-container" id="my-swiper">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide"><img src="/src/img/대문사진/배경.png" alt="홈 배경"></div>
-                    <div class="swiper-slide"><img src="/src/img/대문사진/뜸.png" alt="홈 배경3"></div>
-                    <div class="swiper-slide"><img src="/src/img/대문사진/침.png" alt="홈 배경4"></div>
-                    <div class="swiper-slide"><img src="/src/img/대문사진/교통사고.png" alt="홈 배경2"></div>
+                    <div class="swiper-slide mobile_slide"><img src="/src/img/대문사진/배경.png" alt="홈 배경"></div>
+                    <div class="swiper-slide mobile_slide"><img src="/src/img/대문사진/뜸.png" alt="홈 배경3"></div>
+                    <div class="swiper-slide mobile_slide"><img src="/src/img/대문사진/침.png" alt="홈 배경4"></div>
+                    <div class="swiper-slide mobile_slide"><img src="/src/img/대문사진/교통사고.png" alt="홈 배경2"></div>
                 </div>
                 <div class="swiper-pagination1">
                     <div class="swiper-pagination"></div>
@@ -97,7 +97,7 @@
             <h2 class="title sectionTitle">의료진 소개</h2>
             <div class="line line2Title"></div>
             <div class="profile_img">
-                <img id="doctor_img" src="/src/img/호두.jpg" alt="의사사진">
+                <img id="doctor_img" src="/src/img/제목 없음111.jpg" alt="의사사진">
                 <h3 class="sub_title mobile_sub_title2_1">정&nbsp;&nbsp;면 <span class="sub_title2">대표원장</span></h3>
                 <div class="line2"></div>
                 <div class="desc">
@@ -261,17 +261,22 @@
     <div class="section section_6" id="section_6">
         <h2 class="title">오시는길</h2>
         <div class="line"></div>
+        <div id="mapContainer">
+            <div id="map" style="width:800px;height:400px; margin-top: 50px;" ></div>
+        </div>
         <ul class="address_list">
             <li>
-                <h3 class="sub_title">주소 안내</h3>
+                <h3 class="sub_title" id="address">주소 안내</h3>
                 <p class="desc1">· 경기도 남양주시 미금로 103, 203호(다산동)</p>
             </li>
             <li>
-                <h3 class="sub_title2">대표 전화</h3>
+                <h3 class="sub_title2" id="call">대표 전화</h3>
                 <p class="desc2">· 031-558-1075</p>
             </li>
         </ul> 
     </div>
+
+
     <footer class="copyright">
         <div class="copyright_img">
             <img src="/src/img/로고/여기가 경희 한의원_폰트수정본.png" alt="카피라이터 로고">
@@ -282,7 +287,23 @@
     <script src="../js/jquery-3.7.0.js"></script>
     <script src="../js/main.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=e4d4fb556f7462c67b6cabab07d4361c"></script>
+    <script>/* 사이드바 펼쳐지는 효과 */
+        var container = document.getElementById('map'); //지도를 담을 영역의 DOM 레퍼런스
+        var options = { //지도를 생성할 때 필요한 기본 옵션
+            center: new kakao.maps.LatLng(37.61322921257451, 127.15488418768304), //지도의 중심좌표.
+            level: 3 //지도의 레벨(확대, 축소 정도)
+        };
+        
+        var map = new kakao.maps.Map(container, options);
+        var marker = new kakao.maps.Marker({ 
+    // 지도 중심좌표에 마커를 생성합니다 
+    position: map.getCenter() 
+}); 
+// 지도에 마커를 표시합니다
+marker.setMap(map);
 
+        </script>
 </body>
 
 </html>

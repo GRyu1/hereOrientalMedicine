@@ -12,6 +12,7 @@ const handleHamburgerClicked = () => {
 hamburger.addEventListener("click", handleHamburgerClicked);
 
 /* 대문 이미지 슬라이드 */
+if(screen.width >= 1080){
 document.addEventListener("DOMContentLoaded", function () {
   const slide = new Swiper("#my-swiper", {
     slidesPerView: "auto", // 한 슬라이드에 보여줄 갯수
@@ -30,6 +31,7 @@ document.addEventListener("DOMContentLoaded", function () {
     },
   });
 });
+}
 
 /* 둘러보기 이미지 슬라이드 */
 document.addEventListener("DOMContentLoaded", function () {
@@ -129,7 +131,7 @@ $(document).ready(function () {
       var position = $(this).offset().top;
 
       // 화면의 하단부터 섹션의 상단까지의 거리가 2/3 이내에 위치하면 페이드인 클래스를 추가
-      if (position < scroll + (windowHeight * 2) / 3) {
+      if (position < scroll + (windowHeight * 2 ) /3 ) {
         $(this).addClass("fade-in");
       } else {
         $(this).removeClass("fade-in");
@@ -138,4 +140,3 @@ $(document).ready(function () {
   });
 });
 
-/* 사이드바 펼쳐지는 효과 */
